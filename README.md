@@ -2,11 +2,7 @@
 
 Fast javascript testing library for **nodejs** and **browsers**
 
-[![CircleCI](https://badgen.net/circleci/github/lorenzofox3/zora)](https://circleci.com/gh/lorenzofox3/zora)
-[![npm](https://badgen.net/npm/v/zora)](https://www.npmjs.com/package/zora)
-[![install size](https://badgen.net/packagephobia/install/zora)](https://packagephobia.now.sh/result?p=zora)
-
-[Gitlab mirror](https://gitlab.com/zora-test/zora)
+**This documentation goes up to the v4 of the testing library**, refer to the [master branch](https://github.com/lorenzofox3/zora/) to get the latest version
 
 ## installation
 
