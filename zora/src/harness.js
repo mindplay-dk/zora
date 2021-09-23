@@ -1,15 +1,7 @@
 import { Assert, createAssert } from './test.js';
 
-export const createHarness = ({ onlyMode = false } = {}) => {
+export const createHarness = () => {
   const tests = [];
-
-  // WARNING if the "onlyMode is passed to any harness, all the harnesses will be affected.
-  // However, we do not expect multiple harnesses to be used in the same process
-  if (onlyMode) {
-    const { skip, test } = Assert;
-    Assert.test = skip;
-    Assert.only = test;
-  }
 
   const { test, skip, only } = createAssert({
     onResult: (test) => tests.push(test),
