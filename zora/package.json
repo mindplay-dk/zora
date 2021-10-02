@@ -26,6 +26,10 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
+    "./harness": {
+      "import": "./dist/harness.js",
+      "require": "./dist/harness.cjs"
+    },
     "./cjs": "./dist/index.cjs",
     "./es": "./dist/index.js"
   },

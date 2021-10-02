@@ -2,14 +2,19 @@ import node from '@rollup/plugin-node-resolve';
 import cjs from '@rollup/plugin-commonjs';
 
 export default {
-  input: './src/index.js',
+  input: [
+    './src/index.js',
+    './src/harness.js',
+  ],
   output: [
     {
-      file: './dist/index.cjs',
+      dir: './dist',
       format: 'cjs',
+      entryFileNames: '[name].cjs',
+      chunkFileNames: '[name]-[hash].cjs'
     },
     {
-      file: './dist/index.js',
+      dir: './dist',
       format: 'es',
     },
   ],
